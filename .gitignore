@@ -1,0 +1,71 @@
+# Игнорируемые папки
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+
+# Автогенерируемые файлы
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Файлы Unity
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+
+# Asset cache
+[Aa]ssets/AssetStoreTools*
+[Ll]ibrary/AssetStoreTools*
+
+# Gradle
+[Gg]radle/
+[Ll]ocal/[Gg]radle/
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS
+.DS_Store
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Временные файлы
+*.tmp
+*.bak
+*.orig
+*.swp
+
+# Пакеты
+/[Pp]ackages/packages-*.json
+/[Pp]ackages/[Pp]ackages-*.json
+
+# Прочее
+/[Aa]ssets/[Aa]ddressableAssetsData/*/*.bin*
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
