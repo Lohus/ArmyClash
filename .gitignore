@@ -69,3 +69,4 @@ Desktop.ini
 /[Aa]ssets/[Aa]ddressableAssetsData/*/*.bin*
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+ignore.conf
