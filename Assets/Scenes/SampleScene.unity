@@ -5381,6 +5381,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winsWindow: {fileID: 1393527594}
   message: {fileID: 1108482426}
+  meshProperties: []
+  colorProperties: []
+  sizeProperties: []
 --- !u!114 &1028719057
 MonoBehaviour:
   m_ObjectHideFlags: 0
