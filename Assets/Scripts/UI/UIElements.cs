@@ -5,9 +5,9 @@ public class UIELements : MonoBehaviour
 {
     [SerializeField] GameObject winsWindow;
     [SerializeField] TextMeshProUGUI message;
-    Property[] meshProperties;
-    Property[] colorProperties;
-    Property[] sizeProperties;
+    [SerializeField] Property[] meshProperties;
+    [SerializeField] Property[] colorProperties;
+    [SerializeField] Property[] sizeProperties;
     MeshProperty meshProperty;
     ColorProperty colorProperty;
     SizeProperty sizeProperty;

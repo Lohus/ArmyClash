@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Threading.Tasks;
 
 public class SumpleDropdown : MonoBehaviour
 {
@@ -17,6 +16,7 @@ public class SumpleDropdown : MonoBehaviour
         EventsA.ChangeProperty.AddListener(Refresh);
         label = transform.Find("Label").GetComponent<TextMeshProUGUI>();
         properties = Resources.LoadAll<Property>($"Property/{folder}");        
+        SelectProperty(army, properties[0]);
         Refresh();
     }
     public void SelectProperty(Army army, Property property)
@@ -41,11 +41,17 @@ public class SumpleDropdown : MonoBehaviour
     void Refresh()
     {
         dropdown.ClearOptions();
-        foreach (Property property in properties)
+        foreach (Property prop in properties)
         {
-            dropdown.options.Add(new TMP_Dropdown.OptionData(property.name));
+            dropdown.options.Add(new TMP_Dropdown.OptionData(prop.name));
         }
-        dropdown.value = -1;
+        foreach(Property prop in army.properties)
+        {
+            if (prop.GetType() == properties[0].GetType())
+            {
+                label.text = prop.name;
+            }
+        }
     }
     void OnDropdownChanged(int index)
     {
